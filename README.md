@@ -1,4 +1,4 @@
-# viro-test-ar
+# viroTestAr
 Test App for Viro (AR only)
 
 ## Purpose
