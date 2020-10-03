@@ -26,11 +26,3 @@ target 'viroTestAr' do
   end
 end
 
-target 'viroTestAr-tvOS' do
-  # Pods for viroTestAr-tvOS
-
-  target 'viroTestAr-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-end

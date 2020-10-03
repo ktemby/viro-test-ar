@@ -4,7 +4,7 @@ import { AppRegistry,Text, View, StyleSheet} from 'react-native';
 import {ViroARSceneNavigator} from 'react-viro';
 
 // Sets the default scene you want for AR and VR
-//var InitialARScene = require('./HelloWorldAR');
+var InitialARScene = require('./HelloWorldAR');
 
 var sharedProps = { 
 apiKey:"API_KEY_HERE",
@@ -21,11 +21,11 @@ export default class ViroLoader extends Component {
 
   render() {
     return(
-      <View><Text>hi</Text></View>
+    <ViroARSceneNavigator {...this.state.sharedProps}
+    initialScene={{scene: InitialARScene}} />
     );  
   }
 }
 
-    //<ViroARSceneNavigator {...this.state.sharedProps}
-    //initialScene={{scene: InitialARScene}} />
+
 
